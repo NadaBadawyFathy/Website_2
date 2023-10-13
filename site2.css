@@ -148,7 +148,8 @@ input:focus + label {
         padding: 190px 60px 0 30px;
     } 
     .h1 > h1 {
-        font-size: 40px;
+        font-size: 45px;
+        padding-bottom: 5px;
     }
 }
 /* end your dream */
