@@ -1,0 +1,321 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+.header {
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+}
+.header div ul {
+    display: flex;
+}
+.header div ul li {
+    margin-right: 40px;
+    color:  #757575;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+.header div ul li:hover {
+    color: black;
+}
+.header div i {
+    display: none;
+}
+@media (max-width: 767px) {
+    .header div ul {
+        display: none;
+    }
+    .header {
+        position: relative;
+    }
+    .header div i {
+        visibility: visible;
+        padding-top: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+    }
+    i:hover + ul {
+        visibility: visible;
+        position: absolute;
+        margin-top: 10px;
+        padding: 20px 0 0 40px;
+        left: 0;
+        display: inline;
+        z-index: 1;
+        width: 100%;
+        background-color: black;
+        opacity: .7;
+    }
+    .header div ul li {
+        padding-bottom: 25px;
+        color: white;
+        font-weight: bold;
+    }
+}
+/* end header */
+.your-dream {
+    width: 90%;
+    height: 100vh;
+    background-image: url("./images2/Ritz Paris.jpg");
+    background-size: cover;
+    margin: 10px auto;
+    border-radius: 15px;
+    position: relative;
+}
+.h1 {
+    color: white;
+    padding: 150px 0 0 60px;
+} 
+.h1 > h1 {
+    font-size: 60px;
+}
+.search {
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    opacity: .5;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.search div {
+    position: relative;
+}
+.search label {
+    display: block;
+    color: #E65100;
+    font-size: 20px;
+    line-height: 26px;
+    position: absolute;
+    top: -5px;
+    transition: .6s;
+}
+.search div p {
+    font-size: small;
+    padding-top: 10px;
+}
+.search div input {
+    color: 0;
+    border: 0;
+    border-bottom: 2px solid goldenrod;
+    outline: 0;
+    padding: 5px;
+}
+.search i {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+input:focus + label {
+    transform: translateY(-24px);
+    font-size: small;  
+}
+.search i:hover {
+    opacity: .8;
+}
+@media (max-width: 995px) {
+    .search {
+        display: inline;
+    }
+    .search div p {
+        margin-bottom: 20px;
+    }
+    .search div input {
+        width: 100%;
+    }
+    .h1 > h1 {
+        font-size: 40px;
+    }
+}
+/* end your dream */
+.pop-hotel {
+    width: 90%;
+    margin: 50px auto;
+    margin-bottom: 100px;
+}
+.pop-h {
+    text-align: center;
+    padding: 40px;
+}
+.hotels {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 20px;
+}
+.hotels > .hotel {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0px 8px 1px #757575;
+    padding-bottom: 10px;
+}
+.hotels > .hotel div {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+}
+.hotels > .hotel span {
+    padding: 10px;
+    font-size: 14px;
+    color: #757575;
+}
+.hotel > img {
+    width: 100%;
+}
+.hotel > img:hover {
+    opacity: .9;
+}
+/* end hotels */
+.clients {
+    width: 100%;
+    padding: 40px 0px;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+.clients > h2 {
+    font-size: 35px;
+}
+.clients > .client > div > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -40px;
+    transition: .3s;
+    outline: 5px solid #EEEEEE;
+}
+.clients > .client {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(350px,1fr));
+    gap: 20px;
+}
+.client > div {
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px 0px #757575;
+}
+.client div  p {
+    font-size: 18px;
+    padding: 30px 10px 0;
+    color: #565454;
+}
+.client > div:hover img {
+    transform: translateY(-10px);
+}
+@media (max-width: 1200px) {
+    .clients > .client > div{
+        margin-bottom: 40px;
+    }
+}
+/* end clients */
+.discount {
+    width: 90%;
+    margin: 50px auto;
+    padding: 15px;
+    box-shadow: 1px 1px 10px 0px #757575;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.discount > div {
+    width: 55%;
+    padding: 10px 0px;
+}
+.discount > div span {
+    color: #757575;
+}
+.discount > div h2 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.discount > div button {
+    color: white;
+    border-radius: 10px;
+    background-color: #880E4F;
+    padding: 10px 30px;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+.discount > div button:hover {
+    opacity: .8;
+}
+/* end discount */
+.footer {
+    width: 100%;
+    background-color: #EEEEEE;
+    padding: 30px;
+}
+.footer > .foot {
+    display: grid;
+    grid-template-columns: 30% repeat(3,auto);
+    justify-content: space-around;
+}
+.foot > div > h2{
+    margin-bottom: 25px;
+}
+.foot > div > p {
+    margin-bottom: 20px;
+    color:  #757575;
+    line-height: 25px;
+    cursor: pointer;
+    transition: .9s;
+}
+.foot div li {
+    margin-bottom: 15px;
+    color:  #757575;
+    cursor: pointer;
+    transition: .6s;
+}
+.footer > p {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    color: #757575;
+}
+.foot p:hover ,.foot li:hover {
+    color: black;
+}
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+        padding: 20px;
+    }
+    .footer > .foot {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        justify-content: space-around;
+    }
+    .foot > div {
+        margin-top: 20px;
+    }
+}
