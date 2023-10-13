@@ -48,7 +48,7 @@
         visibility: visible;
         position: absolute;
         margin-top: 10px;
-        padding: 30px 0 0 40px;
+        padding: 20px 0 0 40px;
         left: 0;
         display: inline;
         z-index: 1;
@@ -57,7 +57,7 @@
         opacity: .6;
     }
     .header div ul li {
-        padding-bottom: 40px;
+        padding-bottom: 25px;
         color: white;
         font-weight: bold;
     }
@@ -145,10 +145,10 @@ input:focus + label {
         width: 100%;
     }
     .h1 {
-        padding: 250px 60px 0 30px;
+        padding: 190px 60px 0 30px;
     } 
     .h1 > h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 /* end your dream */
