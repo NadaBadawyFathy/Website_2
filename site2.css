@@ -100,14 +100,13 @@
     display: block;
     color: black;
     font-size: 20px;
-    line-height: 26px;
     position: absolute;
     top: -5px;
     transition: .6s;
 }
 .search div p {
     font-size: small;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .search div input {
     color: 0;
@@ -128,7 +127,7 @@
     transition: .3s;
 }
 input:focus + label {
-    transform: translateY(-24px);
+    transform: translateY(-15px);
     font-size: small;  
 }
 .search i:hover {
@@ -148,7 +147,7 @@ input:focus + label {
         padding: 190px 60px 0 30px;
     } 
     .h1 > h1 {
-        font-size: 45px;
+        font-size: 40px;
         padding-bottom: 5px;
     }
 }
