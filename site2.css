@@ -91,8 +91,7 @@
     left: 0;
     right: 0;
     border-radius: 10px;
-    padding: 20px;
-    padding-bottom: 30px;
+    padding: 25px 20px;
 }
 .search div {
     position: relative;
@@ -103,7 +102,7 @@
     font-size: 20px;
     position: absolute;
     top: -5px;
-    transition: .6s;
+    transition: .6s ease;
 }
 .search div p {
     font-size: small;
